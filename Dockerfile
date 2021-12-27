@@ -1,7 +1,7 @@
 FROM alpine:3.9 as base
 
-ENV REFRESHED_AT="2019-10-10" \
-    POWERDNS_VERSION="4.3.1" \
+ENV REFRESHED_AT="2021-12-27" \
+    POWERDNS_VERSION="4.5.2" \
     BUILD_DEPS="g++ make mariadb-dev postgresql-dev sqlite-dev curl boost-dev mariadb-connector-c-dev" \
     RUN_DEPS="bash libpq sqlite-libs libstdc++ libgcc mariadb-client postgresql-client sqlite mariadb-connector-c lua-dev curl-dev boost-program_options" \
     POWERDNS_MODULES="bind gmysql gpgsql gsqlite3"
@@ -26,8 +26,8 @@ RUN apk add $RUN_DEPS && \
     rm /var/cache/apk/*
 
 LABEL \
-  MAINTAINER="Antoine Millet <antoine@inaps.org>" \
-  CONTRIBUTORS="Christoph Wiechert <wio@psitrax.de>, Mathias Kaufmann <me@stei.gr>, Cloudesire <cloduesire-dev@eng.it>"
+  MAINTAINER="Mark Glants <mark@glants.xyz>" \
+  CONTRIBUTORS="Antoine Millet <antoine@inaps.org>, Christoph Wiechert <wio@psitrax.de>, Mathias Kaufmann <me@stei.gr>, Cloudesire <cloduesire-dev@eng.it>"
 
 ENV AUTOCONF=mysql \
     AUTO_SCHEMA_MIGRATION="yes" \
