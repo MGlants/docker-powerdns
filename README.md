@@ -16,8 +16,7 @@
 
 ## Project history
 
-This image is a (friendly) fork from [psitrax/powerdns](https://hub.docker.com/r/psitrax/powerdns) but adds several
-feature that were missing from the original project (see above for feature list) while multiple contributors were
+This image is a (friendly) fork from [naps/powerdns](https://hub.docker.com/r/naps/powerdns) but adds arm support while multiple contributors were
 proposing code to implement them.
 
 The kudos are going to the original project contributors. Feel free to bring your stone to the building by
@@ -122,10 +121,10 @@ See `docker run --rm naps/powerdns --help`
 
 ## Maintainer
 
-* Antoine Millet <antoine@inaps.org>
+* Mark Glants <mark@glants.xyz>
 
 ### Credits
-
+* Antoine Millet <antoine@inaps.org>
 * Christoph Wiechert <wio@psitrax.de>: Original project maintainer
 * Mathias Kaufmann <me@stei.gr>: Reduced image size
 
